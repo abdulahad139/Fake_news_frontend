@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="purple-line"></div>
+    <div class="main">
+       <div class="main-heading">NEWS CHECK</div>
+    </div>
+    <div class="purple-line-bottom"></div>
+    <section>
+        <div class="content">
+            <form action="/predict" method="POST"  onsubmit="">
+                <h1 class="heading">Write news content here...</h1>
+                <textarea name="content" rows="10" placeholder="Fake news..."></textarea>
+                <input class="predict-button" type="submit" value="Predict">
+            </form>
+            <div id="prediction" class="prediction">
+                <br>
+                <h2 class="heading">Prediction</h2>
+            </div>
+       </div>
+    </section>
+
+    <div class="footer">
+        <h3>@ Copyright 2024</h3>
+        <ul>
+            <li>All Rights Reserved</li>
+        </ul>
+        <h3>Terms of Service | Privacy Policy</h3>
+   </div>
+</body>
+</html>
